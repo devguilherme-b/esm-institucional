@@ -1,0 +1,205 @@
+.home svg{
+    display: block;
+    left: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    bottom: -1;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-dark2);
+    background-image: url('../../assets/imgs/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.home section{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logotipo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.3rem;
+}
+.logotipo h1{
+    color: var(--color-dark2);
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3rem;
+    font-weight: 500;
+    animation: surgirPalavra 1s ease-in-out forwards;
+}
+.logotipo img{
+    width: 50px;
+}
+.home p{
+    font-size: xx-small;
+    background-color: var(--color-green2);
+    filter: drop-shadow(4px 4px 4px var(--color-dark2));
+    color: var(--color-my-white);
+    border-radius: 30px;
+    padding: 0.3em;
+    width: 26ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    animation: aparecerLetraPorLetra steps(25) 3s;
+}
+.action-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3em;
+}
+.action-main a{
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    filter: drop-shadow(4px 4px 4px var(--color-dark2));
+    transition: 0.5s ease-in-out;
+}
+.contratar{
+    margin: 2em 0 0.5em 0;
+    padding: 0.3em 1em 0.3em 1em;
+    background-color: var(--color-green2);
+    color: var(--color-my-white);
+    border-radius: 40px 40px 10px 10px ;
+}
+.ver-servicos{
+    padding: 0.3em 0.3em 0.3em 0.3em;
+    background-color: var(--color-dark3);
+    color: var(--color-dark2);
+    border-radius: 10px 10px 40px 40px ;
+}
+.action-main a:hover{
+    color: var(--color-my-white);
+    background-color: var(--color-yellow1);
+    filter: drop-shadow(4px 4px 4px var(--color-green2));
+}
+/*  
+
+/////////////////////// RESPONSIVE MOBILE FIRST
+
+*/
+
+@media screen and (max-width: 319px){
+    .logotipo img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (min-width: 320px){
+    .logotipo img{
+        width: 80px;
+    }
+    .logotipo h1{
+        font-size: 4.5rem;
+    }
+    .home p{
+        font-size: small;
+    }
+}
+@media screen and (min-width: 425px){
+    .logotipo img{
+        width: 90px;
+    }
+    .logotipo h1{
+        font-size: 5rem;
+    }
+    .action-main a{
+        width: 130px;
+    }
+    .home p{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .logotipo img{
+        width: 110px;
+    }
+    .logotipo h1{
+        font-size: 5.5rem;
+    }
+    .action-main a{
+        font-size: 1.2rem;
+        width: 150px;
+    }
+    .home p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .logotipo img{
+        width: 140px;
+    }
+
+    .logotipo h1{
+        font-size: 7rem;
+    }
+    .action-main a{
+        font-size: 1.4rem;
+        width: 180px;
+    }
+    .home p{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width: 1025px){
+    .logotipo img{
+        width: 200px;
+    }
+
+    .logotipo h1{
+        font-size: 9rem;
+    }
+    .action-main a{
+        font-size: 1.8rem;
+        width: 220px;
+    }
+    .home p{
+        font-size: 1.8rem;
+    }
+}
+/*  
+
+/////////////////////// ANIMAÇÕES / ANIMATIONS
+
+*/
+@keyframes aparecerLetraPorLetra {
+    0%{
+        width: 0;
+    }
+}
+@keyframes surgirPalavra {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes lePeek {
+    25% {  
+        transform: rotateX(30deg) 
+        translateY(10px) 
+        rotate(-13deg); 
+    }50% { 
+        transform: translateY(-22px) 
+        rotate(3deg) 
+        scale(1.1);  }
+}

@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --color-my-white: #f5f6f5;
+    --color-dark1: #060606;
+    --color-dark2: #282727;
+    --color-dark3: #8c8785;
+    --color-dark4: #d0cfce;
+    --color-ebano: #1c1c1c;
+    --color-green1: #69cb98;
+    --color-green2: #10a855;
+    --color-green3: #339c588f;
+    --color-green4: #075129;
+    --color-yellow1: #b8ad18;
+    --color-blue1: #058dd8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Faz com que padding e border sejam incluídos na largura total dos elementos.*/
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--color-my-white);
+    color: var(--color-dark2);
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.title{
+    font-size: 1.7rem;
+}
+@media screen and (min-width: 400px) {
+    .title{
+        font-size: 1.9rem;
+    }
+}
+@media screen and (min-width: 700px) {
+    .title{
+        font-size: 2.1rem;
+    }
+}

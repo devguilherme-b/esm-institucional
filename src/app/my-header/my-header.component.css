@@ -1,0 +1,120 @@
+.header,
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.header {
+    position: fixed;
+    height: 3.5em;
+    padding: 0.5em;
+    background-color: var(--color-my-white);
+    box-shadow: 1px 1px 8px var(--color-green1);
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.navigation_header {
+    gap: 3.5em;
+    z-index: 4;
+}
+
+.navigation_header a {
+    text-decoration: none;
+    color: var(--color-dark2);
+    transition: 1s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navigation_header a:hover {
+    color: var(--color-my-white);
+    background-color: var(--color-green1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img_logo_menu {
+    cursor: pointer;
+    width: 45px;
+}
+
+.btn_ico_header {
+    border: none;
+    background: transparent;
+    color: var(--color-green4);
+    display: none;
+    cursor: pointer;
+}
+/* 
+
+/////////////////// RESPONSIVIDADE / REPONSIVE ////////////////////
+
+*/
+@media screen and (max-width: 100px) {
+    .img_logo_menu {
+        width: 1em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .btn_ico_header {
+        display: block;
+    }
+
+    #one_btn_ico_header {
+        color: var(--color-my-white);
+    }
+
+    .navigation_header {
+        position: absolute;
+        /*Elemento agora é relativo ao seu estilo antecessor*/
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        filter: drop-shadow(1px 1px 8px var(--color-green1));
+        box-shadow: 1px 1px 1px var(--color-green-box-shadow);
+        background-color: var(--color-green4);
+        width: 49vw;
+        height: 100vh;
+        padding: 1em;
+        transition-duration: 1s;
+        margin-left: -100vw;
+        border-radius: 0 30px 30px 0;
+    }
+    .navigation_header a {
+        color: var(--color-my-white);
+    }
+    .navigation_header a:hover {
+        color: var(--color-green2);
+    }
+}
+@media screen and (min-width: 769px){
+    .header,
+    .navigation_header {
+        justify-content: right;
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 1024px){
+    .header,
+    .navigation_header {
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+}
+/* 
+
+/////////////////// ANIMAÇÕES / ANIMATIONS ////////////////////
+
+*/
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+    top {
+        margin-left: -1vw;
+    }
+}
