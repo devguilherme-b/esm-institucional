@@ -117,10 +117,12 @@ svg{
     .about {
         font-size: large;
         padding: 2.5rem;
+        justify-content: center;
     }
 
     .history {
         flex-direction: row;
+        align-items: center;
     }
 
     .about h1 {
@@ -150,7 +152,7 @@ svg{
 @media screen and (min-width: 1185px) {
     .about {
         font-size: 1rem;
-        padding: 2.5rem;
+        padding: 3rem;
         align-items: center;
         justify-content: center;
         align-items: flex-start;

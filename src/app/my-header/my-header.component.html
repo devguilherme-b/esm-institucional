@@ -12,6 +12,7 @@
             <a (click)="scrollToSection('home')">Inicio</a>
             <a (click)="scrollToSection('about')">Sobre</a>
             <a (click)="scrollToSection('services')">Serviços</a>
+            <a (click)="scrollToSection('blog')">Blog</a>
             <a (click)="scrollToSection('partners')">Parceiros</a>
             <a (click)="scrollToSection('contacts')">Contatos</a>
         </div>
@@ -22,3 +23,21 @@
         </button>
     </div>
 </header>
+<div #home>
+    <app-my-home></app-my-home>
+</div>
+<div #about>
+    <app-my-about></app-my-about>
+</div>
+<div #services>
+    <app-my-services></app-my-services>
+</div>
+<div #blog>
+    <app-my-blog></app-my-blog>
+</div>
+<div #partners>
+    <app-my-partners></app-my-partners>
+</div>
+<div #contacts>
+    <app-my-contacts></app-my-contacts>
+</div>

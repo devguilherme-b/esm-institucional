@@ -1,17 +1,3 @@
-<app-my-header></app-my-header>
-<div #home>
-    <app-my-home></app-my-home>
-</div>
-<div #about>
-    <app-my-about></app-my-about>
-</div>
-<div #services>
-    <app-my-services></app-my-services>
-</div>
-<div #partners>
-    <app-my-partners></app-my-partners>
-</div>
-<div #contacts>
-    <app-my-contacts></app-my-contacts>
-</div>
+<app-my-second-header *ngIf="mostrarSegundoHeader"></app-my-second-header>
 <router-outlet />
+<app-my-footer></app-my-footer>

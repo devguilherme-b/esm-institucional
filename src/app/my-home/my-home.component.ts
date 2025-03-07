@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppComponent } from '../app.component';
+import { MyHeaderComponent } from '../my-header/my-header.component';
 
 @Component({
   selector: 'app-my-home',
@@ -8,9 +8,9 @@ import { AppComponent } from '../app.component';
   styleUrl: './my-home.component.css'
 })
 export class MyHomeComponent {
-  constructor(private appComponent: AppComponent){}
+    constructor(private myHeaderComponent: MyHeaderComponent){}
   
     scrollToSection(sectionId: string){
-      this.appComponent.scrollToSection(sectionId);
+      this.myHeaderComponent.scrollToSection(sectionId);
     }
 }

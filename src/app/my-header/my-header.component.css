@@ -24,7 +24,7 @@
 
 .navigation_header a {
     text-decoration: none;
-    color: var(--color-dark2);
+    color: var(--color-dark3);
     transition: 1s;
     font-weight: bold;
     cursor: pointer;

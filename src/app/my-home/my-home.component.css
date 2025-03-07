@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--color-dark2);
+    background-color: var(--color-dark4);
     background-image: url('../../assets/imgs/background.jpg');
     background-repeat: no-repeat;
     background-position: center;

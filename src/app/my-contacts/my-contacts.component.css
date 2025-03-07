@@ -2,10 +2,10 @@
     height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 1rem;
-    background-color: var(--color-dark4);
+    background-color: var(--color-my-white);
 }
 
 .myContacts h1 {
@@ -65,6 +65,7 @@ article div img {
     }
 
     img {
+        scale: 1.02;
         filter: drop-shadow(2px 1px 4px var(--color-yellow1));
     }
 }
@@ -95,50 +96,44 @@ article,
 .opcoes-de-contatos {
     font-size: 0.6rem;
 }
-
-@media screen and (max-width: 319px) {
-
-    .rodape div {
-        padding-bottom: 0.5rem;
-    }
-}
-
-@media screen and (min-width: 320px) {
-    .rodape {
-        padding: 1rem 1.3rem;
-    }
-}
-
 @media screen and (min-width: 375px) {
     .opcoes-de-contatos a img {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
     .opcoes-de-contatos a p {
-        height: 30px;
+        height: 25px;
         padding: 0.3rem 0.5rem;
         align-content: center;
     }
-
-    .rodape {
-        padding: 1rem 1rem 1rem 1.9rem;
+    .opcoes-de-contatos a{
+        margin: 1rem;
     }
-
     .contatos {
         display: flex;
         align-items: center;
         gap: 2rem;
     }
-}
-
-@media screen and (min-width: 400px) {
-    .rodape {
-        flex-direction: row;
-        gap: 3.5rem;
+    article,
+    .rodape,
+    .opcoes-de-contatos {
+        font-size: 0.6rem;
+    }
+    .contatos {
+        gap: 0.5rem;
     }
 }
-
+@media screen and (min-width: 480px) {
+    article,
+    .rodape,
+    .opcoes-de-contatos {
+        font-size: 1.3rem;
+    }
+    .contatos {
+        gap: 3rem;
+    }
+}
 @media screen and (min-width: 520px) {
     .contatos {
         flex-direction: row;
@@ -150,16 +145,11 @@ article,
     .contatos {
         gap: 6rem;
     }
-
-    .rodape {
-        flex-direction: row;
-        padding: 1rem;
-    }
 }
 
 @media screen and (min-width: 1000px) {
     article {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .opcoes-de-contatos a img {
@@ -178,24 +168,20 @@ article,
     }
 
     .contatos {
-        gap: 7rem;
+        gap: 6rem;
     }
 
     .opcoes-de-contatos {
-        font-size: 1.4rem;
-        gap: 7rem;
+        font-size: 1.5rem;
+        gap: 6rem;
     }
 
     .opcoes-de-contatos a p {
-        height: 35px;
-    }
-
-    .opcoes-de-contatos a img {
-        width: 45px;
         height: 45px;
     }
 
-    .rodape {
-        font-size: 0.9rem;
+    .opcoes-de-contatos a img {
+        width: 55px;
+        height: 55px;
     }
 }

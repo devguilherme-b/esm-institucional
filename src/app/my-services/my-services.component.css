@@ -8,7 +8,7 @@ svg{
     bottom: -1;
 }
 .myServices {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,6 +43,7 @@ svg{
 details {
     border-radius: 20px;
     background-color: var(--color-dark4);
+    filter: drop-shadow(1px 1px 4px var(--color-dark2));
 }
 summary,
 ol {
@@ -57,6 +58,7 @@ summary {
     color: var(--color-my-white);
     padding: 0.3rem;
     transition: border-radius 0.8s ease-in-out;
+    cursor: pointer;
 }
 ol {
     max-height: 300px;
@@ -68,6 +70,10 @@ ol {
 }
 ol li {
     margin: 0.5rem;
+}
+summary:hover{
+    scale: 1.03;
+    filter: drop-shadow(2px 2px 8px var(--color-yellow1));
 }
 @media screen and (min-width: 320px) {
     .myServices {
@@ -136,7 +142,7 @@ ol li {
 }
 @media screen and (min-width: 1024px) {
     .myServices {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
 }
 @media screen and (min-width: 1300px) {
