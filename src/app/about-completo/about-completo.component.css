@@ -1,0 +1,71 @@
+.about-completo {
+    min-height: 250vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-dark2);
+    box-sizing: border-box;
+    font-size: 0.8rem;
+    padding: 5rem 0.3rem;
+}
+
+.about-completo h2 {
+    color: var(--color-dark3);
+}
+
+.about-completo h3 {
+    color: var(--color-dark3);
+}
+
+.about-completo span {
+    color: var(--color-blue1);
+}
+
+.about-completo a {
+    color: var(--color-blue1);
+}
+
+@media screen and (min-width: 320px) {
+    .about-completo {
+        font-size: 0.9rem;
+        padding: 5rem 0.5rem;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .about-completo {
+        font-size: 0.9rem;
+        padding: 6rem 1rem;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .about-completo {
+        align-items: center;
+        padding: 6rem 4rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about-completo {
+        font-size: 1.2rem;
+        align-items: center;
+        padding: 8rem 2rem;
+        min-height: 280vh;
+    }
+
+    .container-about {
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about-completo{
+        padding: 10rem 2rem;
+    }
+    .container-about {
+        width: 700px;
+    }
+}
