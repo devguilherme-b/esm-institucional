@@ -22,7 +22,7 @@ export class NoticiasComponent {
     });
   }
   // Função para compartilhar conteúdo
-  currentUrl: string = window.location.href;
+  currentUrl: string = window.location.origin;
 
   shareOnTwitter()
   {
