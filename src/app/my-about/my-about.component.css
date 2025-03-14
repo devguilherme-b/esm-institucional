@@ -85,6 +85,7 @@ svg{
     background-color: var(--color-green2);
     color: var(--color-dark2);
     border-radius: 10px 10px 40px 40px ;
+    transition: 0.4s;
 }
 #fundador-container a:hover{
     color: var(--color-my-white);

@@ -20,9 +20,9 @@
     color: var(--color-blue1);
     background-color: var(--color-my-white);
     font-size: 1rem;
-    padding: 0.3rem;
+    padding: 0.3rem 1rem;
     border: 1px solid var(--color-blue1);
-    border-radius: 10px;
+    border-radius: 24px;
     font-weight: 700;
 }
 .credits-secondary {
