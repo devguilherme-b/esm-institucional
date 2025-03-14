@@ -34,8 +34,10 @@ export class NoticiasComponent {
     const whatsappUrl = `https://api.whatsapp.com/send?text=🚧 A ESM traz mais um conteúdo que você não pode perder!%0a%0aAcesse aqui: ${encodeURIComponent(this.currentUrl)}`;
     window.open(whatsappUrl, '_blank');
   }
-  copyToClipboard()
+  copyToClipboard(event: Event)
   {
+    event.preventDefault();
+
     navigator.clipboard.writeText(this.currentUrl).then(() => {
       alert('Link copiado para a área de transferência! 🚧✅');
     }).catch(err => {
