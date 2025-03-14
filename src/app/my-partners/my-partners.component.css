@@ -31,7 +31,7 @@
     filter:drop-shadow(2px 2px 2px var(--color-green2));
 }
 /*  RESPONSIVIDADE */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 320px) {
     .partners{
         grid-template-columns: 1fr 1fr;
     }
