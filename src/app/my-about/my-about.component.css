@@ -69,6 +69,7 @@ video {
     padding: 0.5rem;
     z-index: 3;
     margin: 4rem 0.3rem;
+    width: 290px;
 }
 
 .fundador img {
