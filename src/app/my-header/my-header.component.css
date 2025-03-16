@@ -47,7 +47,12 @@
     background: transparent;
     color: var(--color-green4);
     display: none;
-    cursor: pointer;
+    cursor: pointer; 
+}
+#one_btn_ico_header img, svg{
+    border-radius: 50%;
+    color: var(--color-green4);
+    background: var(--color-my-white);
 }
 /* 
 

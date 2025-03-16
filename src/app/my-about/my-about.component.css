@@ -1,4 +1,15 @@
-svg{
+.noticia-video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+video {
+    height: 420px;
+    width: auto;
+    border-radius: 8px;
+}svg{
     display: block;
     left: 0;
     bottom: -1;
@@ -57,16 +68,15 @@ svg{
     border-radius: 20px 20px 20px 0;
     padding: 0.5rem;
     z-index: 3;
-    margin-bottom: 1rem;
+    margin: 4rem 0.3rem;
 }
 
 .fundador img {
     z-index: 2;
-    width: 160px;
-    filter: drop-shadow(2px 2px 8px var(--color-green2));
+    width: 70px;
+    filter: drop-shadow(2px 2px 8px var(--color-dark3));
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--color-ebano) 100%);
-    border-radius: 30px;
-    margin: 1.4rem;
+    border-radius: 13px;
 }
 
 .fundador span {
@@ -92,29 +102,18 @@ svg{
     background-color: var(--color-yellow1);
     filter: drop-shadow(4px 4px 4px var(--color-green2));
 }
-.noticia-video{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-video {
-    height: 230px;
-    width: 140px;
-    border-radius: 8px;
-}
+
 @media screen and (min-width: 200px) {
     video {
-        height: auto;
-        width: 95%;
+        height: 460px;
+        width: auto;
         margin: 0.8rem 0;
     }
 }
 @media screen and (min-width: 320px) {
     video {
-        height: auto;
-        width: 70%;
+        height: 320px;
+        width: auto;
     }
 }
 @media screen and (min-width: 549px) {
@@ -125,9 +124,9 @@ video {
         font-size: 0.9rem;
     }
     .fundador img {
-        width: 180px;
+        width: 80px;
         height: auto;
-        margin: 1rem;
+        border-radius: 18px;
     }
 
     .fundador {
@@ -138,13 +137,13 @@ video {
     }
 
     .fundador p {
-        width: 200px;
+        width: 240px;
     }
 }
 @media screen and (min-width: 680px) {
     video {
-        height: 230px;
-        width: 140px;
+        height: 430px;
+        width: auto;
     }
 }
 @media screen and (min-width: 768px) {
@@ -160,7 +159,7 @@ video {
     }
 
     .fundador img {
-        width: 300px;
+        width: 90px;
     }
 
     .fundador p {
@@ -197,7 +196,7 @@ video {
     }
 
     .fundador img {
-        width: 300px;
+        width: 110px;
     }
 
     .fundador p {
@@ -205,8 +204,8 @@ video {
         padding: 1rem;
     }
     video {
-        height: 440px;
-        width: 370px;
+        height: 420px;
+        width: auto;
     }
 }
 
@@ -247,7 +246,7 @@ video {
     }
 
     .fundador p {
-        width: 400px;
+        width: 380px;
     }
 }
 
