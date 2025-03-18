@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     padding-top: 4rem;
 }
 .blog-container h1{
@@ -22,7 +22,7 @@
 }
 @media screen and (min-width: 376px) {
     .blog-container{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 }
 @media screen and (min-width: 600px) {

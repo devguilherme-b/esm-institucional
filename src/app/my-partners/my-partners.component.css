@@ -18,17 +18,17 @@
     align-items: center;
     gap: 2rem;
 }
-.card{
+.card-partners{
     transition: 0.9s ease-in-out;
 }
-.card img{
+.card-partners img{
     width: 100px;
     border-radius: 8px;
     filter: drop-shadow(2px 2px 2px var(--color-dark3));
 }
-.card img:hover{
+.card-partners img:hover{
     scale: 1.07;
-    filter:drop-shadow(2px 2px 2px var(--color-green2));
+    filter: drop-shadow(2px 2px 2px var(--color-green2));
 }
 /*  RESPONSIVIDADE */
 @media screen and (min-width: 320px) {
