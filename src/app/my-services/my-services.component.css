@@ -99,7 +99,7 @@ summary:hover{
     }
     summary,
     ol {
-        width: 190px;
+        width: 200px;
      }
 }
 @media screen and (min-width: 425px) {
@@ -112,7 +112,7 @@ summary:hover{
     }
     summary,
     ol {
-        width: 200px;
+        width: 220px;
     }
     .allServices div {
         display: flex;
