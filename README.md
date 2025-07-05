@@ -1,59 +1,149 @@
-# ESM
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
+# ESM Institucional
 
-## Development server
+[![Deploy - Vercel](https://img.shields.io/badge/deploy-vercel-000?logo=vercel&style=for-the-badge)](https://www.consultoriaesm.com.br/)
 
-To start a local development server, run:
+Site institucional desenvolvido para a **ESM Consultoria e Treinamento**, focada em Segurança do Trabalho.
 
-```bash
-ng serve
+🔗 Acesse a versão online: [consultoriaesm.com.br](https://www.consultoriaesm.com.br/)
+
+---
+
+## 🖼️ Prévia do site
+
+![Preview do site](./src/assets/imgs/banner-institucional-esm-consultoria.png)
+
+
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- **Frontend**: Angular, TypeScript  
+- **Estilização**: Bootstrap, CSS, Canva (imagens e ícones)  
+- **Animações**: CSSAnimation.io  
+
+---
+
+## 🚀 Estrutura do projeto
+
+```
+esm-institucional/
+├── src/
+│   ├── app/
+│   │   ├── components/       # Cabeçalho, rodapé, seções
+│   │   ├── services/         # Fonte das notícias presentes em Blog
+│   │   └── app.module.ts
+│   ├── assets/               # Imagens, logos, ícones
+│   └── styles.css            # Estilos globais
+├── angular.json
+├── package.json
+└── README.md
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ⚙️ Como executar localmente
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/devguilherme-b/esm-institucional.git
+   cd esm-institucional
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor:
+   ```bash
+   ng serve
+   ```
+4. Acesse `http://localhost:4200` no navegador.
 
-```bash
-ng generate component component-name
+---
+
+## 📌 Funcionalidades / seções
+
+- Cabeçalho 
+- Início  
+- Sobre  
+- Serviços  
+- Blog  
+- Parceiros  
+- Contatos  
+- rodapé.
+
+---
+
+## 📐 Design e acessibilidade
+
+- Layout responsivo com **Bootstrap Grid**  
+- Paleta de cores e tipografia coerentes com identidade visual  
+- Imagens otimizadas via Canva  
+- Animações leves com CSSAnimation.io  
+- Acessibilidade básica: contraste, navegação por teclado e uso de `alt` em imagens
+
+---
+
+## ✅ Checklist de melhorias
+
+- [ ] Otimização SEO (title, meta tags, sitemap)
+- [ ] Deploy automático via CI/CD (integração com Vercel)
+
+---
+
+## 👍 Contribuição
+
+1. Crie uma branch:
+   ```bash
+   git checkout -b feature/nova-funcionalidade
+   ```
+2. Faça as alterações e commit:
+   ```bash
+   git commit -m "Adiciona nova funcionalidade"
+   ```
+3. Envie para o repositório remoto:
+   ```bash
+   git push origin feature/nova-funcionalidade
+   ```
+4. Abra um Pull Request
+
+
+---
+
+## 📢 Post no LinkedIn
+
 ```
+🚀 Primeiro Projeto Publicado! 🚀
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Hoje compartilho com vocês o meu primeiro projeto real publicado: o site da ESM Consultoria e Treinamentos Ltda 🌐💻.
 
-```bash
-ng generate --help
+Esse projeto foi um grande aprendizado na minha carreira como desenvolvedor, pois além de criar um site institucional moderno e bem estruturado, utilizei TypeScript e Angular, tecnologias que ainda não domino completamente, o que me desafiou a aprender na prática.
+
+🔹 Destaques do site
+
+✅ Design moderno e funcional, com seções intuitivas: Início, Sobre, Serviços, Blog, Parceiros e Contatos  
+✅ Blog dinâmico – cada notícia leva a uma página única, gerada automaticamente com base no conteúdo  
+✅ Botões de compartilhamento e contato – mensagens pré-preenchidas para facilitar a interação no WhatsApp e outras plataformas
+
+🛠 Tecnologias utilizadas
+
+✔️ HTML5 e CSS3 – estrutura e estilização do site  
+✔️ TypeScript e Angular – desenvolvimento de um front-end dinâmico e interativo  
+✔️ Git, GitHub e Vercel – controle de versão, hospedagem e deploy contínuo para atualizações frequentes
+
+💡 Agradecimento especial ao Edval Matias pela confiança e a oportunidade incrível! 🙌
+
 ```
+> Confira em: [linkedin.com/in/devguilhermebarbosa](https://www.linkedin.com/posts/devguilhermebarbosa_programaaexaeto-fullstack-angular-activity-7310138878365978624-pdu-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFDAkqQBDKPBHV5551TEhmJmSNh41KFSJR4)
+ 
+## 📬 Meios de Contato
 
-## Building
+- **Email**: [devguilhermebarbos@gmail.com](mailto:devguilhermebarbos@gmail.com)  
+- **LinkedIn**: [linkedin.com/in/devguilhermebarbosa](https://linkedin.com/in/devguilhermebarbosa)  
+- **GitHub**: [github.com/devguilherme-b](https://github.com/devguilherme-b)
 
-To build the project run:
+---
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🧠 Sinta-se à vontade para `sugerir melhorias` ou `contribuir com o projeto! `
