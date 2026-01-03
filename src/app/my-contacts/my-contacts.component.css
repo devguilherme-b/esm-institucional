@@ -3,14 +3,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
     gap: 1rem;
     background-color: var(--color-my-white);
 }
 
 .myContacts h1 {
     padding-left: 0.3rem;
-    text-align: left;
     color: var(--color-green4);
 }
 
@@ -52,7 +50,7 @@ article div img {
 .opcoes-de-contatos a p {
     border-radius: 20px;
     height: 25px;
-    padding: 0.3rem;
+    padding: 0rem 1.2rem ;
     color: var(--color-my-white);
     background-color: var(--color-green2);
 }
@@ -97,6 +95,10 @@ article,
     font-size: 0.7rem;
 }
 @media screen and (min-width: 375px) {
+    .myContacts h1 {
+        text-align: center;
+    }
+
     .opcoes-de-contatos a img {
         width: 30px;
         height: 30px;
@@ -104,7 +106,6 @@ article,
 
     .opcoes-de-contatos a p {
         height: 30px;
-        padding: 0.3rem 0.5rem;
         align-content: center;
     }
     .opcoes-de-contatos a{
@@ -125,6 +126,9 @@ article,
     }
 }
 @media screen and (min-width: 480px) {
+    .myContacts h1 {
+        text-align: center;
+    }
     article,
     .rodape,
     .opcoes-de-contatos {
@@ -135,6 +139,9 @@ article,
     }
 }
 @media screen and (min-width: 520px) {
+    .myContacts h1 {
+        text-align: left;
+    }
     .contatos {
         flex-direction: row;
         gap: 4rem;
