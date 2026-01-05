@@ -21,7 +21,7 @@ export class NoticiaService {
     },
     {
       id: 2,
-      titulo: ' Safra 2025: Segurança, Planejamento e Colaboração',
+      titulo: 'Safra 2025: Segurança, Planejamento e Colaboração',
       descricao: 'Planejamento estratégico, compromisso com a segurança e trabalho em equipe são pilares para uma safra produtiva e sustentável. Saiba como foi o alinhamento estratégico da CHS Agrícola!',
       imagemOne: 'assets/imgs/acompanhamento.jpg',
       imagemThree: 'assets/imgs/acompanhamento-esm.jpg',
