@@ -9,12 +9,14 @@
 
 .myContacts h1 {
     padding-left: 0.3rem;
+    text-align: center;
     color: var(--color-green4);
 }
 
 .contatos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 4rem;
 }
@@ -95,10 +97,6 @@ article,
     font-size: 0.7rem;
 }
 @media screen and (min-width: 375px) {
-    .myContacts h1 {
-        text-align: center;
-    }
-
     .opcoes-de-contatos a img {
         width: 30px;
         height: 30px;
@@ -126,9 +124,6 @@ article,
     }
 }
 @media screen and (min-width: 480px) {
-    .myContacts h1 {
-        text-align: center;
-    }
     article,
     .rodape,
     .opcoes-de-contatos {
@@ -139,11 +134,9 @@ article,
     }
 }
 @media screen and (min-width: 520px) {
-    .myContacts h1 {
-        text-align: left;
-    }
     .contatos {
         flex-direction: row;
+        justify-content: center;
         gap: 4rem;
     }
 }
