@@ -43,6 +43,17 @@ export class NoticiaService {
       conclusao: 'Com a orientação do consultor e professor Edval Matias, a turma explorou os principais conceitos sobre prevenção de incêndios, uso correto de extintores e medidas de emergência em diferentes cenários. O treinamento não apenas reforça a importância da segurança, mas também capacita os profissionais do futuro para atuar com responsabilidade no setor agrícola e industrial.',
       autor: 'Edval Matias'
     },
+    {
+      id: 4,
+      titulo: 'Segurança em Foco: Prevenção e Combate a Incêndios',
+      descricao: ' Jovens aprendizes do Senar em Uruçuí (PI) aprenderam técnicas essenciais de prevenção e combate a incêndios. Veja como esse conhecimento pode salvar vidas!',
+      imagemOne: 'assets/imgs/treinamento-contra-incendios.jpg',
+      video: 'assets/videos/treinamento-contra-incendios.mp4',
+      introducao: 'A segurança no ambiente de trabalho começa com conhecimento e preparo. Durante a aula de NR-23 - Prevenção e Combate a Incêndios, os jovens aprendizes do Programa Jovem Aprendiz do Senar, em Uruçuí (PI), tiveram a oportunidade de aprender técnicas essenciais para proteger vidas e patrimônios.',
+      desenvolvimentoOne: 'Com a orientação do consultor e professor Edval Matias, a turma explorou os principais conceitos sobre prevenção de incêndios, uso correto de extintores e medidas de emergência em diferentes cenários. O treinamento não apenas reforça a importância da segurança, mas também capacita os profissionais do futuro para atuar com responsabilidade no setor agrícola e industrial.',
+      conclusao: 'Com a orientação do consultor e professor Edval Matias, a turma explorou os principais conceitos sobre prevenção de incêndios, uso correto de extintores e medidas de emergência em diferentes cenários. O treinamento não apenas reforça a importância da segurança, mas também capacita os profissionais do futuro para atuar com responsabilidade no setor agrícola e industrial.',
+      autor: 'Edval Matias'
+    }
   ];
   getNoticiaPorId(id: number)
   {
